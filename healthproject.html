@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        background-color: rgb(14, 14, 14);
+        text-shadow: 1px 1px rgb(0, 0, 0);
+    }
+    
+    p {
+        font-size: 1.5vw;
+    }
+    
+    .title {
+        color: rgb(100, 100, 100);
+        text-align: center;
+        text-shadow: 1px 1px rgb(0, 0, 0);
+    }
+    
+    .section {
+        color: rgb(100, 100, 100);
+    }
+    
+    .section2 {
+        color: rgb(100, 100, 100);
+        display: none;
+    }
+    
+    .sectiondiv {
+        border: 1vw;
+    }
+    
+    .headerbar {
+        border-bottom-style: solid;
+        border-width: 3px;
+        border-color: rgb(100, 100, 100);
+    }
+</style>
+<script>
+    var istherebackgroundtext = false;
+    var istheredrugsusedtext = false;
+    var isthereearlydruguse = false;
+    var istherelatedruguse = false;
+    var isthererecovery = false;
+
+    function revealbackground() {
+        if (istherebackgroundtext == false) {
+            document.getElementById("backgroundtext").style.display = "block";
+            istherebackgroundtext = true;
+            console.log("function 1 executed")
+        } else {
+            document.getElementById("backgroundtext").style.display = "none";
+            istherebackgroundtext = false;
+        }
+    }
+
+    function revealdrugsused() {
+        if (istheredrugsusedtext == false) {
+            document.getElementById("drugsusedtext").style.display = "block";
+            istheredrugsusedtext = true;
+            console.log("function 2 executed")
+        } else {
+            document.getElementById("drugsusedtext").style.display = "none";
+            istheredrugsusedtext = false;
+        }
+    }
+
+    function revealearlydruguse() {
+        if (isthereearlydruguse == false) {
+            document.getElementById("earlydrugusetext").style.display = "block";
+            isthereearlydruguse = true;
+            console.log("function 3 executed")
+        } else {
+            document.getElementById("earlydrugusetext").style.display = "none";
+            isthereearlydruguse = false;
+        }
+    }
+
+    function reveallatedruguse() {
+        if (istherelatedruguse == false) {
+            document.getElementById("latedrugusetext").style.display = "block";
+            istherelatedruguse = true;
+            console.log("function 4 executed");
+        } else {
+            document.getElementById("latedrugusetext").style.display = "none";
+            istherelatedruguse = false;
+        }
+    }
+
+    function revealrecovery() {
+        if (isthererecovery == false) {
+            document.getElementById("recoverytext").style.display = "block";
+            isthererecovery = true;
+            console.log("function 5 executed")
+        } else {
+            document.getElementById("recoverytext").style.display = "none";
+            isthererecovery = false;
+        }
+    }
+</script>
+
+<body>
+    <div class="headerbar">
+        <h1 class="title">Sigmund Freud</h1>
+    </div>
+
+
+    <h2 class="section" onclick="revealbackground()" id="backgroundheader">Background</h2>
+    <p id="backgroundtext" class="section2">Sigmund Freud was a famous Austrian Neurologist born on 6 May 1856 in Freiberg in the Austrian Empire (now Příbor in the Czech Republic) and died on 23 September 1939 in London. Freud was famous for founding psychoanalysis and developing theories
+        in human behavior, sexuality, and psychology, notable ones include those of the id, ego, and the superego, repression, and the concept of a mental defense mechanism. Though most of his theories and ideas are relevant in the modern era, he was
+        still an influential figure in the fields of psychology and neurology.
+    </p>
+
+
+    <h2 class="section" onclick="revealdrugsused()" id="drugsusedheader">Drugs used</h2>
+    <p id="drugsusedtext" class="section2">Sigmund Freud used tobacco and cocaine throughout his life<br><br><big>Cocaine:</big><br>Cocaine is an addictive drug that produces a euphoric effect when taken. Sigmund Freud himself conducted research with his paper Über Coca. Chronic use of Cocaine
+        may result in an increased rate of strokes, reduced attention span, insomnia, and other ailments.<br><br><big>Tobacco:</big><br>Tobacco is a plant with stimulating properties that can be smoked to release dopamine and endorphins. Smoking tobacco
+        is known to cause lung cancer, increase heart attack risk, stroke risk, and COPD. Tobacco is also highly addictive, and though cocaine is widely regarded as being more addictive than tobacco, Freud's tobacco addiction proved to be much worse for
+        his health in the long term.
+    </p>
+
+
+    <h2 class="section" onclick="revealearlydruguse()" id="earlydrugsheader">Early Drug Use</h2>
+    <p id="earlydrugusetext" class="section2">Sigmund Freud was an early advocate for cocaine in the 19th century. While in his 20s, he dabbled in the drug for both its stimulating properties and as a painkiller. At the age of 28, he published the paper Über Coca which poised cocaine as a miracle
+        drug capable of curing many mental and physical ailments, including depression and morphine addiction. On top of his use of cocaine, at the age of 24 he also began smoking cigars, which would go on to deprecate his health for the rest of his life.
+        He believed he had the self control in him to not get addicted
+    </p>
+
+
+    <h2 class="section" onclick="reveallatedruguse()" id="latedrugsheader">Late Drug Use</h2>
+    <p id="latedrugusetext" class="section2">Sigmund's drug use in his later years was much less than that of his younger years. Once cocaine was revealed not to be a miracle cure like he had thought but a dangerous and addictive substance his medical reputation began to tarnish. After this,
+        he would not advocate for it publicly again, but would continue to use cocaine in small amounts. He eventually gave it up entirely. However, he would continue to smoke cigars into his later years.
+    </p>
+
+
+    <h2 class="section" onclick="revealrecovery()" id="recoveryheader">Treatment and Death</h2>
+    <p id="recoverytext" class="section2">Sigmund Freud went on to develop oral cancer in 1923 because of his heavy smoking, which started as a benign tumor. Freud eventually saw Felix Deutsch who downplayed the seriousness of his condition, which at this point was cancerous, but still advised
+        him to get it excised. The doctor in charge of Freud’s treatment was questionably qualified and the treatment was a disaster, where Freud “may have narrowly escaped death”. When all was said and done, the cancer was still there and more surgery
+        was needed. Over the next 16 years, there would be another 30 operations, none of which were successful.<br><br><big>Death:</big><br>. In 1939 he was declared inoperable and his cancer was causing him severe pain, so around midnight on the 23
+        of September 1939, he took one last dose of morphine in the form of doctor-assisted suicide.
+    </p>
+
+
+</body>
+
+</html>
